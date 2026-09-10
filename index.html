@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dan Young Comedy | Midwest Stand-Up</title>
-  <meta name="description" content="Dan Young is a Midwest stand-up comedian and comic-book nerd. Book Dan for clubs, colleges, corporates, and private events. Text LAUGHS for Show Alerts." />
+  <meta name="description" content="Dan Young is a Midwest stand-up comedian and comic-book nerd. Book Dan for clubs, colleges, and private events." />
   <meta property="og:title" content="Dan Young Comedy" />
-  <meta property="og:description" content="Midwest stand-up. Comic-book nerd. Book the show. Text LAUGHS for Show Alerts." />
+  <meta property="og:description" content="Midwest stand-up. Comic-book nerd. Hell of a ride." />
   <meta property="og:image" content="https://easy-links.s3.us-west-2.amazonaws.com/avatars/avatar-danyoungcomedy.com-IJj8ti.jpeg" />
   <link rel="icon" href="https://easy-links.s3.us-west-2.amazonaws.com/avatars/avatar-danyoungcomedy.com-IJj8ti.jpeg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    :root { --black:#070707; --card:#121212; --line:#2a2a2a; --white:#f6f6f4; --mute:#b7b7b3; --gold:#d4af37; --gold-2:#f0d36b; --red:#c1121f; }
+    :root { --black:#070707; --card:#121212; --line:#2a2a2a; --white:#f6f6f4; --mute:#b7b7b3; --gold:#d4af37; --gold-2:#f0d36b; }
     * { box-sizing:border-box; margin:0; padding:0; }
     html { scroll-behavior:smooth; }
     body { font-family:Inter,system-ui,sans-serif; background:var(--black); color:var(--white); line-height:1.55; }
@@ -31,7 +31,6 @@
     .btn:hover { background:var(--gold-2); }
     .btn.ghost { background:transparent; color:var(--white); border:1px solid var(--line); }
     .btn.ghost:hover { border-color:var(--gold); color:var(--gold); }
-    .btn.red { background:var(--red); color:#fff; }
     .menu-btn { display:none; background:none; border:0; color:#fff; font-size:22px; }
     .hero { padding:72px 0 56px; display:grid; grid-template-columns:1.05fr .95fr; gap:48px; align-items:center; }
     .kicker { color:var(--gold); font-size:12px; font-weight:700; letter-spacing:.22em; text-transform:uppercase; margin-bottom:14px; }
@@ -42,37 +41,30 @@
     .logo-stage img { width:min(360px,100%); }
     section { padding:72px 0; border-top:1px solid var(--line); }
     h2 { font-family:"Bebas Neue",sans-serif; font-size:clamp(36px,6vw,58px); letter-spacing:.03em; margin-bottom:8px; }
-    .sub { color:var(--mute); margin-bottom:28px; max-width:640px; }
+    .sub { color:var(--mute); margin-bottom:22px; max-width:640px; }
     .empty { background:var(--card); border:1px dashed #3a3a3a; border-radius:16px; padding:36px 28px; text-align:center; }
     .empty strong { display:block; font-size:18px; margin-bottom:8px; }
     .grid-2 { display:grid; grid-template-columns:1.1fr .9fr; gap:36px; align-items:start; }
     .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:24px; }
     .bullets { list-style:none; display:grid; gap:10px; }
     .bullets li::before { content:"\25B8 "; color:var(--gold); }
-    .book-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .book-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:28px; }
     .book-grid h3 { font-size:18px; margin-bottom:8px; }
     .book-grid p { color:var(--mute); font-size:14px; }
     form { display:grid; gap:12px; }
     input, select, textarea { width:100%; background:#0a0a0a; color:#fff; border:1px solid var(--line); border-radius:10px; padding:12px 14px; font:inherit; }
     textarea { min-height:110px; resize:vertical; }
-    .alerts { display:grid; grid-template-columns:1.15fr .85fr; gap:20px; }
-    .alert-card { background:linear-gradient(180deg,#16130a,#0c0c0c); border:1px solid #3a3318; border-radius:18px; padding:28px; }
-    .alert-card.stop { background:linear-gradient(180deg,#1a0d0d,#0c0c0c); border-color:#3a1a1a; }
-    code { display:inline-block; background:#000; border:1px solid var(--gold); color:var(--gold-2); padding:8px 12px; border-radius:8px; font-weight:700; letter-spacing:.08em; margin:6px 6px 6px 0; }
-    .alert-card.stop code { border-color:#8a3030; color:#ffb3b3; }
     .fine { font-size:12px; color:#8d8d88; margin-top:12px; }
-    .alert-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
     .socials { display:flex; flex-wrap:wrap; gap:10px; }
     .socials a { border:1px solid var(--line); border-radius:999px; padding:8px 14px; font-size:13px; color:var(--mute); }
     .socials a:hover { border-color:var(--gold); color:var(--gold); }
     footer { padding:36px 0 48px; color:#8a8a86; font-size:13px; }
     .foot { display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
-    .note { font-size:12px; color:#7c7c78; border-left:3px solid var(--gold); padding-left:12px; margin-top:18px; }
     @media (max-width:860px) {
       nav { display:none; }
       .menu-btn { display:block; }
       nav.open { display:flex; position:absolute; top:72px; left:0; right:0; background:#0b0b0b; flex-direction:column; padding:16px 20px 22px; gap:14px; border-bottom:1px solid var(--line); }
-      .hero,.grid-2,.alerts,.book-grid { grid-template-columns:1fr; }
+      .hero,.grid-2,.book-grid { grid-template-columns:1fr; }
       .logo-stage { min-height:280px; }
     }
   </style>
@@ -90,8 +82,7 @@
         <a href="#about">About</a>
         <a href="#watch">Watch</a>
         <a href="#book">Book Dan</a>
-        <a href="#list">Show Alerts</a>
-        <a href="#press">Press</a>
+        <a href="#list">First look</a>
         <a class="btn" href="#book">Book a date</a>
       </nav>
     </div>
@@ -105,30 +96,30 @@
         <div class="hero-actions">
           <a class="btn" href="#book">Book Dan</a>
           <a class="btn ghost" href="https://youtu.be/hru-NyIYRug" target="_blank" rel="noopener">Watch a set</a>
-          <a class="btn ghost" href="#list">Show Alerts</a>
         </div>
       </div>
       <div class="logo-stage">
         <img src="https://easy-links.s3.us-west-2.amazonaws.com/avatars/avatar-danyoungcomedy.com-IJj8ti.jpeg" alt="D.Y.C." />
       </div>
     </div>
+
     <section id="shows">
       <div class="wrap">
         <p class="kicker">On the road</p>
         <h2>Upcoming shows</h2>
         <div class="empty">
           <strong>No dates on the books right now.</strong>
-          <p style="color:var(--mute);max-width:520px;margin:0 auto 18px">When a night lands, it goes here first.</p>
-          <a class="btn" href="#list">Subscribe to Show Alerts</a>
+          <p style="color:var(--mute)">When a night lands, it goes here first.</p>
         </div>
       </div>
     </section>
+
     <section id="about">
       <div class="wrap grid-2">
         <div>
           <p class="kicker">The comic</p>
           <h2>About Dan</h2>
-          <p class="sub">Dan Young is a Midwest stand-up and comic-book nerd. Family, fandom, and rooms that still want to laugh out loud.</p>
+          <p class="sub">Dan Young is a Midwest stand-up working rooms the way the Midwest actually lives: family, fandom, and punchlines that only work if you&rsquo;ve been in the parking lot after last call.</p>
           <ul class="bullets">
             <li>Home base: Midwest circuit (Lincoln / Omaha corridor and out)</li>
             <li>Lane: stand-up &middot; hosting &middot; features &middot; private events</li>
@@ -141,6 +132,7 @@
         </div>
       </div>
     </section>
+
     <section id="watch">
       <div class="wrap">
         <p class="kicker">Clips</p>
@@ -149,16 +141,20 @@
         <div class="card" style="padding:0;overflow:hidden;aspect-ratio:16/9;background:#000">
           <iframe src="https://www.youtube.com/embed/hru-NyIYRug" title="Dan Young Comedy set" style="width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
         </div>
-        <p style="margin-top:14px">
-          <a class="btn" href="https://youtu.be/hru-NyIYRug" target="_blank" rel="noopener">Open on YouTube</a>
-        </p>
+        <p style="margin-top:14px"><a class="btn" href="https://youtu.be/hru-NyIYRug" target="_blank" rel="noopener">Open on YouTube</a></p>
       </div>
     </section>
+
     <section id="book">
       <div class="wrap">
         <p class="kicker">Work</p>
         <h2>Book Dan</h2>
-        <p class="sub">Tell him the room, the runtime, and whether the set needs to stay clean.</p>
+        <p class="sub">Clubs, colleges, corporate banquets, fundraisers, private parties. Tell him the room, the runtime, and whether the set needs to stay clean.</p>
+        <div class="book-grid">
+          <div class="card"><h3>Clubs & showcases</h3><p>Feature and headline-ready sets. Hosting available.</p></div>
+          <div class="card"><h3>Private & corporate</h3><p>Banquets, holiday parties, fundraisers. Clean or club &mdash; say it up front.</p></div>
+          <div class="card"><h3>Colleges & events</h3><p>Easy load-in. A mic, a light, and a crowd that wants to laugh.</p></div>
+        </div>
         <form action="mailto:booking@danyoungcomedy.com" method="get">
           <input name="subject" type="hidden" value="Booking request — Dan Young Comedy" />
           <input name="name" placeholder="Your name" required />
@@ -171,32 +167,23 @@
         </form>
       </div>
     </section>
+
     <section id="list">
       <div class="wrap">
-        <p class="kicker">Text list &middot; not a personal line</p>
-        <h2>Show Alerts</h2>
-        <div class="alerts">
-          <div class="alert-card">
-            <p class="kicker">Subscribe</p>
-            <p>Text <code>LAUGHS</code> to <code>402-853-2581</code></p>
-            <div class="alert-actions"><a class="btn" href="sms:4028532581?&body=LAUGHS">Subscribe &middot; send LAUGHS</a></div>
-          </div>
-          <div class="alert-card stop">
-            <p class="kicker">Unsubscribe</p>
-            <p>Text <code>STOP</code> to <code>402-853-2581</code></p>
-            <div class="alert-actions"><a class="btn red" href="sms:4028532581?&body=STOP">Unsubscribe &middot; send STOP</a></div>
-          </div>
-        </div>
+        <h2>Want first look?</h2>
+        <p class="sub">Text LAUGHS to 402-853-2581 for Show Alerts. Reply STOP to leave the list.</p>
       </div>
     </section>
+
     <section id="press">
       <div class="wrap">
         <p class="kicker">Press</p>
         <h2>Press kit</h2>
-        <p>Watch: <a href="https://youtu.be/hru-NyIYRug">https://youtu.be/hru-NyIYRug</a></p>
+        <p class="sub">Watch: <a href="https://youtu.be/hru-NyIYRug">https://youtu.be/hru-NyIYRug</a></p>
       </div>
     </section>
   </main>
+
   <footer>
     <div class="wrap">
       <div class="socials" style="margin-bottom:22px">
@@ -208,7 +195,7 @@
       </div>
       <div class="foot">
         <span>&copy; <span id="y"></span> Dan Young Comedy</span>
-        <span>Show Alerts: text LAUGHS / STOP</span>
+        <span>Booking: booking@danyoungcomedy.com</span>
       </div>
     </div>
   </footer>
