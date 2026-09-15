@@ -34,8 +34,7 @@ h2{font-family:"Bebas Neue",sans-serif;font-size:28px;letter-spacing:.06em;margi
 .stage img{width:100%;height:180px;object-fit:cover;filter:saturate(.9)}
 iframe.set{width:100%;aspect-ratio:16/9;border:0;background:#000}
 .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#111;font-weight:700;padding:11px 16px;letter-spacing:.04em;text-transform:uppercase;font-size:12px;border:0;cursor:pointer}
-.btn.ghost{background:transparent;color:#fff;border:1px solid var(--line)}
-.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.btn:hover{filter:brightness(1.08)}
 form{display:grid;gap:10px}
 input,textarea{width:100%;background:#0a0a0a;color:#fff;border:1px solid var(--line);border-radius:4px;padding:11px 12px;font:inherit}
 textarea{min-height:90px}
@@ -93,21 +92,16 @@ footer{padding:8px 28px 24px;color:#777;font-size:12px;display:flex;justify-cont
         <h2>Booking</h2>
         <p><a href="mailto:booking@danyoungcomedy.com">booking@danyoungcomedy.com</a></p>
         <p style="margin-top:8px">Show Alerts (fans only): text <b>LAUGHS</b> to <b>402-853-2581</b>. That number is not a booking line.</p>
-        <div class="acts">
-          <a class="btn" href="mailto:booking@danyoungcomedy.com?subject=Booking%20request%20%E2%80%94%20Dan%20Young%20Comedy">Email booking</a>
-          <a class="btn ghost" href="https://youtu.be/hru-NyIYRug" target="_blank" rel="noopener">Open clip</a>
-        </div>
       </div>
       <div class="block">
         <h2>Request a date</h2>
-        <form action="mailto:booking@danyoungcomedy.com" method="get">
-          <input name="subject" type="hidden" value="Booking request — Dan Young Comedy" />
-          <input name="name" placeholder="Your name" required />
-          <input type="email" name="email" placeholder="Work email" required />
-          <input name="org" placeholder="Club / company / venue" />
-          <input name="date" placeholder="Target date(s)" />
-          <textarea name="body" placeholder="Runtime, clean vs club, city, budget."></textarea>
-          <button class="btn" type="submit">Send request</button>
+        <form id="book">
+          <input id="name" name="name" placeholder="Your name" required />
+          <input id="email" type="email" name="email" placeholder="Work email" required />
+          <input id="org" name="org" placeholder="Club / company / venue" />
+          <input id="date" name="date" placeholder="Target date(s)" />
+          <textarea id="details" name="details" placeholder="Runtime, clean vs club, city, budget."></textarea>
+          <button class="btn" type="submit">Send booking request</button>
         </form>
       </div>
       <div class="block">
@@ -128,5 +122,24 @@ footer{padding:8px 28px 24px;color:#777;font-size:12px;display:flex;justify-cont
     <span>booking@danyoungcomedy.com</span>
   </footer>
 </article>
+<script>
+document.getElementById('book').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var name = document.getElementById('name').value.trim();
+  var email = document.getElementById('email').value.trim();
+  var org = document.getElementById('org').value.trim();
+  var date = document.getElementById('date').value.trim();
+  var details = document.getElementById('details').value.trim();
+  var lines = [];
+  if (name) lines.push('Name: ' + name);
+  if (email) lines.push('Email: ' + email);
+  if (org) lines.push('Venue: ' + org);
+  if (date) lines.push('Dates: ' + date);
+  if (details) lines.push('', details);
+  var subject = encodeURIComponent('Booking request — Dan Young Comedy');
+  var body = encodeURIComponent(lines.join('\n'));
+  window.location.href = 'mailto:booking@danyoungcomedy.com?subject=' + subject + '&body=' + body;
+});
+</script>
 </body>
 </html>
