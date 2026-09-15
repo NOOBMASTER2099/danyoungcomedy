@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Preview 1 — Spotlight | Dan Young Comedy</title>
+<meta name="robots" content="noindex" />
+<link rel="icon" href="../logo.jpg" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{--gold:#d4af37;--gold2:#f0d36b;--ink:#f6f6f4;--mute:#b7b7b3;--line:#2a2a2a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#070707;color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(1100px,calc(100% - 36px));margin:0 auto}
+.bar{background:#d4af37;color:#111;text-align:center;padding:8px 16px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.bar a{text-decoration:underline}
+header{position:sticky;top:0;z-index:20;background:rgba(7,7,7,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Bebas Neue",sans-serif;letter-spacing:.08em;font-size:26px}
+.brand img{width:42px;height:42px;object-fit:cover;border-radius:4px}
+nav{display:flex;gap:20px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+nav a{color:var(--mute)}
+nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#111;font-weight:700;padding:12px 18px;border-radius:999px;letter-spacing:.04em;text-transform:uppercase;font-size:13px}
+.btn:hover{background:var(--gold2)}
+.btn.ghost{background:transparent;color:#fff;border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--gold);color:var(--gold)}
+.hero{min-height:78vh;background:#000 url("../stage.jpg") center/cover no-repeat;display:grid;align-items:end}
+.hero-inner{background:linear-gradient(transparent,rgba(0,0,0,.92));padding:80px 0 48px}
+.kicker{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;margin-bottom:12px}
+h1{font-family:"Bebas Neue",sans-serif;font-size:clamp(56px,10vw,108px);line-height:.86;letter-spacing:.02em}
+.lede{color:#ddd;max-width:520px;margin:16px 0 24px;font-size:18px}
+.acts{display:flex;gap:10px;flex-wrap:wrap}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font-family:"Bebas Neue",sans-serif;font-size:clamp(34px,6vw,54px);letter-spacing:.03em}
+.sub{color:var(--mute);margin:8px 0 22px;max-width:640px}
+.empty{background:#121212;border:1px dashed #3a3a3a;border-radius:16px;padding:32px;text-align:center}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#121212;border:1px solid var(--line);border-radius:16px;padding:22px}
+.card h3{margin-bottom:8px}
+.card p{color:var(--mute);font-size:14px}
+.socials{display:flex;flex-wrap:wrap;gap:10px}
+.socials a{border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:13px;color:var(--mute)}
+.socials a:hover{border-color:var(--gold);color:var(--gold)}
+form{display:grid;gap:12px;max-width:560px}
+input,textarea{width:100%;background:#0a0a0a;color:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;font:inherit}
+textarea{min-height:110px}
+footer{padding:28px 0 44px;color:#8a8a86;font-size:13px}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+iframe.set{width:100%;aspect-ratio:16/9;border:0;border-radius:16px;background:#000}
+@media(max-width:800px){nav{display:none}.grid3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="bar">Preview 01 · Spotlight · <a href="index.html">All 5 templates</a> · Live homepage unchanged</div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><img src="../logo.jpg" alt="D.Y.C." /> D.Y.C.</a>
+    <nav>
+      <a href="#shows">Shows</a>
+      <a href="#about">About</a>
+      <a href="#watch">Watch</a>
+      <a href="#book">Book Dan</a>
+      <a href="#list">First look</a>
+    </nav>
+  </div>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="wrap">
+        <p class="kicker">Midwest stand-up · Comic-book nerd</p>
+        <h1>DAN YOUNG<br>COMEDY</h1>
+        <p class="lede">Not sure where he’s going. Pretty sure the ride is going to be a hell of a one.</p>
+        <div class="acts">
+          <a class="btn" href="#book">Book Dan</a>
+          <a class="btn ghost" href="https://youtu.be/hru-NyIYRug" target="_blank" rel="noopener">Watch a set</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="shows">
+    <div class="wrap">
+      <p class="kicker">On the road</p>
+      <h2>Upcoming shows</h2>
+      <div class="empty">
+        <strong>No dates on the books right now.</strong>
+        <p class="sub" style="margin:8px auto 0">When a night lands, it goes here first.</p>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrap">
+      <p class="kicker">The comic</p>
+      <h2>About Dan</h2>
+      <p class="sub">Dan Young is a Midwest stand-up working rooms the way the Midwest actually lives: family, fandom, and punchlines that only work if you’ve been in the parking lot after last call.</p>
+      <div class="grid3">
+        <div class="card"><h3>Home base</h3><p>Lincoln / Omaha corridor and out.</p></div>
+        <div class="card"><h3>Lane</h3><p>Stand-up · hosting · features · private events.</p></div>
+        <div class="card"><h3>Available</h3><p>Clubs, colleges, corporates, fundraisers.</p></div>
+      </div>
+    </div>
+  </section>
+  <section id="watch">
+    <div class="wrap">
+      <p class="kicker">Clips</p>
+      <h2>Watch</h2>
+      <p class="sub">Live set. Send this to bookers.</p>
+      <iframe class="set" src="https://www.youtube.com/embed/hru-NyIYRug" title="Dan Young Comedy set" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+  <section id="book">
+    <div class="wrap">
+      <p class="kicker">Work</p>
+      <h2>Book Dan</h2>
+      <p class="sub">Clubs, colleges, corporate banquets, fundraisers, private parties. Tell him the room, the runtime, and whether the set needs to stay clean.</p>
+      <form action="mailto:booking@danyoungcomedy.com" method="get">
+        <input name="subject" type="hidden" value="Booking request — Dan Young Comedy" />
+        <input name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Work email" required />
+        <input name="org" placeholder="Club / company / venue" />
+        <input name="date" placeholder="Target date(s)" />
+        <textarea name="body" placeholder="Runtime, clean vs club, city, budget."></textarea>
+        <button class="btn" type="submit">Send booking request</button>
+      </form>
+      <p class="sub" style="margin-top:12px">Booking: booking@danyoungcomedy.com</p>
+    </div>
+  </section>
+  <section id="list">
+    <div class="wrap">
+      <h2>Want first look?</h2>
+      <p class="sub">Text <b>LAUGHS</b> to <b>402-853-2581</b> for Show Alerts. Reply STOP to leave the list.</p>
+      <div class="acts">
+        <a class="btn" href="sms:+14028532581?body=LAUGHS">Subscribe</a>
+        <a class="btn ghost" href="sms:+14028532581?body=STOP">Unsubscribe</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="socials" style="margin-bottom:18px">
+      <a href="https://www.tiktok.com/@danyoungcomedy" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.facebook.com/danyoungcomedy" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/@danyoungcomedy" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://x.com/danyoungcomedy" target="_blank" rel="noopener">X</a>
+      <a href="https://www.snapchat.com/@dyoungcomedy" target="_blank" rel="noopener">Snapchat</a>
+    </div>
+    <div class="foot">
+      <span>© Dan Young Comedy</span>
+      <span>Booking: booking@danyoungcomedy.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
