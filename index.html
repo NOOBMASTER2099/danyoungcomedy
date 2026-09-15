@@ -35,9 +35,10 @@ h2{font-family:"Bebas Neue",sans-serif;font-size:28px;letter-spacing:.06em;margi
 iframe.set{width:100%;aspect-ratio:16/9;border:0;background:#000}
 .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#111;font-weight:700;padding:11px 16px;letter-spacing:.04em;text-transform:uppercase;font-size:12px;border:0;cursor:pointer}
 .btn:hover{filter:brightness(1.08)}
-.btn.ghost{background:transparent;color:#fff;border:1px solid var(--line)}
-.btn.ghost:hover{border-color:var(--gold);color:var(--gold);filter:none}
-.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.news-btns{display:grid;gap:10px;margin-top:14px}
+.news-btns .btn{width:100%;min-height:48px;border-radius:6px;font-size:13px}
+.btn.unsub{background:transparent;color:#fff;border:1px solid var(--line)}
+.btn.unsub:hover{border-color:#c45c5c;color:#f0b4b4;filter:none}
 form{display:grid;gap:10px}
 input,textarea{width:100%;background:#0a0a0a;color:#fff;border:1px solid var(--line);border-radius:4px;padding:11px 12px;font:inherit}
 textarea{min-height:90px}
@@ -104,10 +105,10 @@ footer{padding:8px 28px 24px;color:#777;font-size:12px;display:flex;justify-cont
       </div>
       <div class="block">
         <h2>Newsletter</h2>
-        <p>Booking updates, new dates, and whatever else is worth knowing. Same list bookers and fans use.</p>
-        <div class="acts">
-          <a class="btn" href="sms:+14028532581?body=LAUGHS">Subscribe</a>
-          <a class="btn ghost" href="sms:+14028532581?body=STOP">Unsubscribe</a>
+        <p>Subscribe for booking updates, new dates, and more.</p>
+        <div class="news-btns">
+          <a class="btn" href="sms:+14028532581?body=LAUGHS">Subscribe to newsletter</a>
+          <a class="btn unsub" href="sms:+14028532581?body=STOP">Unsubscribe from newsletter</a>
         </div>
       </div>
       <div class="block">
