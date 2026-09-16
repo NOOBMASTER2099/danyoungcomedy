@@ -7,7 +7,7 @@
 <meta name="description" content="Dan Young is a stand-up comedian with 15 years of stage time, working clubs, colleges, and private events nationwide." />
 <meta property="og:title" content="Dan Young Comedy" />
 <meta property="og:description" content="15 years of stand-up. All over the country. Comic-book nerd. Hell of a ride." />
-<meta property="og:image" content="https://danyoungcomedy.com/logo.jpg" />
+<meta property="og:image" content="https://danyoungcomedy.com/michandhead" />
 <link rel="icon" href="logo.jpg" />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <style>
@@ -18,8 +18,11 @@ body{background:#0a0a0a;color:var(--ink);font-family:Inter,system-ui,sans-serif;
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 .sheet{background:#111;border:1px solid var(--line);margin:28px auto 48px;width:min(980px,calc(100% - 36px));border-radius:4px;overflow:hidden}
-.mast{display:grid;grid-template-columns:160px 1fr;gap:22px;align-items:center;padding:28px 28px 22px;border-bottom:3px solid var(--gold);background:#0d0d0d}
-.mast img{width:160px;height:160px;object-fit:cover;border:1px solid var(--line)}
+.mast{display:grid;grid-template-columns:72px 1fr;gap:16px;align-items:center;padding:20px 28px;background:#0d0d0d}
+.mast img.logo{width:72px;height:72px;object-fit:cover;border:1px solid var(--line)}
+.hero{border-bottom:3px solid var(--gold);background:#000}
+.hero img{width:100%;max-height:420px;object-fit:cover;object-position:center top}
+.intro{padding:22px 28px 8px}
 .kicker{color:var(--gold);font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:700}
 h1{font-family:"Bebas Neue",sans-serif;font-size:clamp(40px,7vw,64px);line-height:.88;letter-spacing:.03em;margin:6px 0}
 .lede{color:var(--mute);max-width:52ch}
@@ -31,7 +34,7 @@ h2{font-family:"Bebas Neue",sans-serif;font-size:28px;letter-spacing:.06em;margi
 .block p,.block li{color:var(--mute)}
 .block ul{padding-left:18px;display:grid;gap:6px}
 .stage{border:1px solid var(--line);overflow:hidden;margin-bottom:14px}
-.stage img{width:100%;height:180px;object-fit:cover;filter:saturate(.9)}
+.stage img{width:100%;height:260px;object-fit:cover;object-position:center}
 iframe.set{width:100%;aspect-ratio:16/9;border:0;background:#000}
 .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#111;font-weight:700;padding:11px 16px;letter-spacing:.04em;text-transform:uppercase;font-size:12px;border:0;cursor:pointer}
 .btn:hover{filter:brightness(1.08)}
@@ -47,17 +50,24 @@ textarea{min-height:90px}
 .socials a{border:1px solid var(--line);padding:8px 14px;font-size:13px;color:var(--mute);border-radius:999px}
 .socials a:hover{border-color:var(--gold);color:var(--gold)}
 footer{padding:8px 28px 24px;color:#777;font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-@media(max-width:760px){.mast,.body{grid-template-columns:1fr}.mast img{width:96px;height:96px}}
+@media(max-width:760px){.mast,.body{grid-template-columns:1fr}.hero img{max-height:300px}.stage img{height:200px}}
 @media print{body{background:#fff;color:#111}.sheet{border:0;margin:0;width:100%}.lede,.block p,.block li{color:#333}}
 </style>
 </head>
 <body>
 <article class="sheet">
-  <header class="mast">
-    <img src="logo.jpg" alt="Dan Young Comedy logo" />
-    <div>
-      <p class="kicker">One-sheet · Bookers &amp; press</p>
-      <h1>DAN YOUNG<br>COMEDY</h1>
+  <header>
+    <div class="mast">
+      <img class="logo" src="logo.jpg" alt="Dan Young Comedy logo" />
+      <div>
+        <p class="kicker">One-sheet · Bookers &amp; press</p>
+        <h1>DAN YOUNG<br>COMEDY</h1>
+      </div>
+    </div>
+    <div class="hero">
+      <img src="michandhead" alt="Dan Young — main photo" />
+    </div>
+    <div class="intro">
       <p class="lede">15 years of stand-up. Comic-book nerd. Worked rooms all over the country. Not sure where he’s going next. Pretty sure the ride is going to be a hell of a one.</p>
       <div class="meta">
         <span class="chip">15 years on stage</span>
@@ -99,7 +109,7 @@ footer{padding:8px 28px 24px;color:#777;font-size:12px;display:flex;justify-cont
       </div>
     </div>
     <aside>
-      <div class="stage"><img src="stage.jpg" alt="Stage mark — mic, stool, brick wall" /></div>
+      <div class="stage"><img src="danonstage" alt="Dan Young on stage" /></div>
       <div class="block contact">
         <h2>Booking</h2>
         <p><a href="mailto:booking@danyoungcomedy.com">booking@danyoungcomedy.com</a></p>
